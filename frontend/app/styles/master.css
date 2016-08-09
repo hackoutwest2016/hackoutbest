@@ -1,5 +1,7 @@
 body, html {
 }
+
+/* NAVBAR */
 div[ng-view] {
     padding-top: 130px;
 }
@@ -28,4 +30,23 @@ div[ng-view] {
     line-height: 100px;
     height: 100px;
     padding-top: 0;
+}
+
+/* OTHER */
+img.padded {
+    box-sizing: border-box;
+    padding: 40px;
+
+    max-width: 500px;
+}
+
+a.face-fake-btn img {
+    max-width: 250px;
+}
+a.face-fake-btn {
+    display: inline-block;
+    margin: 0 auto;
+}
+div.center {
+    text-align: center;
 }
