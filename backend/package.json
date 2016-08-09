@@ -1,0 +1,22 @@
+{
+  "name": "hackoutfest",
+  "version": "1.0.0",
+  "description": "Blast from the past app, for keeping track of your live music history",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackoutwest2016/hackoutfest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackoutwest2016/hackoutfest/issues"
+  },
+  "homepage": "https://github.com/hackoutwest2016/hackoutfest#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
