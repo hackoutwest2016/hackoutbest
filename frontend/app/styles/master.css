@@ -1,0 +1,31 @@
+body, html {
+}
+div[ng-view] {
+    padding-top: 130px;
+}
+.navbar {
+    border: none;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+    float:none;
+    font-size: 80px;
+}
+.navbar .navbar-brand {
+    font-family: 'Road Rage';
+    color: #f573a0;
+}
+.navbar .navbar-brand:hover {
+    color: #fae62d;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
