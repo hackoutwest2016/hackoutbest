@@ -49,4 +49,5 @@ a.face-fake-btn {
 }
 div.center {
     text-align: center;
+    min-width: 500px;
 }
