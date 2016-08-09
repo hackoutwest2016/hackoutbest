@@ -4,7 +4,11 @@ app.config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode(true).hashPrefix('!');
 	var templatesPath = "app/templates/";
 	$routeProvider.
-		when('/',{
+	    when('/', {
+	      templateUrl: templatesPath + 'landing.html',
+	      controller: 'LandingController'
+	    }).
+		when('/home',{
 			templateUrl: templatesPath + 'home.html',
 			controller: 'HomeController'
 		}).
@@ -18,39 +22,39 @@ app.config(function($routeProvider, $locationProvider) {
 	}
 );
 
-app.run(['$rootScope', '$window', 'srvAuth',
-  function($rootScope, $window, sAuth) {
+// app.run(['$rootScope', '$window', 'srvAuth',
+//   function($rootScope, $window, sAuth) {
 
-  $rootScope.user = {};
+//   $rootScope.user = {};
 
-  $window.fbAsyncInit = function() {
-    FB.init({
-      appId: '***************',
-      channelUrl: 'app/channel.html',
-      status: true,
-      cookie: true,
-      xfbml: true
-    });
+//   $window.fbAsyncInit = function() {
+//     FB.init({
+//       appId: '***************',
+//       channelUrl: 'app/channel.html',
+//       status: true,
+//       cookie: true,
+//       xfbml: true
+//     });
 
-    sAuth.watchAuthenticationStatusChange();
-  };
+//     sAuth.watchAuthenticationStatusChange();
+//   };
 
-  (function(d){
-    var js,
-    id = 'facebook-jssdk',
-    ref = d.getElementsByTagName('script')[0];
+//   (function(d){
+//     var js,
+//     id = 'facebook-jssdk',
+//     ref = d.getElementsByTagName('script')[0];
 
-    if (d.getElementById(id)) {
-      return;
-    }
+//     if (d.getElementById(id)) {
+//       return;
+//     }
 
-    js = d.createElement('script');
-    js.id = id;
-    js.async = true;
-    js.src = "//connect.facebook.net/en_US/all.js";
+//     js = d.createElement('script');
+//     js.id = id;
+//     js.async = true;
+//     js.src = "//connect.facebook.net/en_US/all.js";
 
-    ref.parentNode.insertBefore(js, ref);
+//     ref.parentNode.insertBefore(js, ref);
 
-  }(document));
+//   }(document));
 
-}]);
+// }]);
