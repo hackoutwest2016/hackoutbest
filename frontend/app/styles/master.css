@@ -15,16 +15,18 @@ div[ng-view] {
 }
 .navbar {
     border: none;
+    padding: 0 15px;
+    background-color: #ffffff;
 }
 .navbar .container {
-    width: 95%;
+    width: 100%;
 }
 .navbar-header {
     float: left;
     padding: 15px;
     text-align: center;
     width: 100%;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
 }
 .navbar-brand {
     float:none;
@@ -64,13 +66,10 @@ div.center {
     min-width: 500px;
 }
 
-img.img-consert {
-    padding: 0px 20px;
-    margin-top: 30px;
-}
+/* FOOTER */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 
@@ -96,4 +95,33 @@ img.img-consert {
 }
 .footer a:last-child {
     margin-right: 0;
+}
+
+/* CONCERT */
+
+.concert .row {
+    padding: 0 35px;
+}
+.concert h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+.concert p {
+    margin-top: 40px;
+    font-size: 35px;
+    padding: 0 35px;
+}
+.concert img {
+    padding: 0px 20px;
+    margin-top: 30px;
+}
+.concert .rating {
+    font-size: 70px;
+    text-align: right;
+    margin-top: 55px;
+    margin-right: 10px;
+}
+.concert .rating span {
+    margin-left: 10px;
 }

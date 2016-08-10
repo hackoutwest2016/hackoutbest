@@ -29,6 +29,7 @@
 				<h1>{{concert.date}}</h1>
 				<div class="rating">
 		    		<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/>
+					<span class="glyphicon glyphicon-star-empty" ng-repeat="n in [] | range:(concert.rating-5)"/>
 		    	</div>
 			</div>
 		</div>
@@ -38,6 +39,6 @@
     <div class="container">
         <a href="home"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
         <a class="divider">&nbsp;|&nbsp;</a>
-        <a href="concert"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+        <a href="settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
     </div>
 </footer>
