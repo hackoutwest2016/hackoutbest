@@ -210,3 +210,100 @@ div.center {
 a[href="concert"] {
     color: #000000;
 }
+
+/* ADD CONCERT */
+.addconcert {
+    margin: 0 15px;
+}
+.addconcert .search {
+    margin: 35px 0;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000000;
+}
+.addconcert .search span {
+    font-size: 80px;
+    padding: 0 50px 0 30px;
+}
+.addconcert .search input {
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: 20px;
+    line-height: 80px;
+    height: 80px;
+    vertical-align: top;
+    color: #000000;
+}
+
+.addconcert .photo {
+    margin-top: 25px;
+}
+.addconcert .photo .square {
+    width: 600px;
+    height: 600px;
+    border: 6px solid #000000;
+
+    position: relative;
+}
+.addconcert .photo .circle {
+    width: 250px;
+    height: 250px;
+    border: 10px solid #f573a0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.addconcert .photo span {
+    font-size: 80px;
+    line-height: 250px;
+    vertical-align: middle;
+
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+
+    margin-top: -15px;
+    margin-left: -8px;
+}
+
+.addconcert .rating {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 25px;
+}
+.addconcert .rating span {
+    margin-left: 10px;
+}
+
+.addconcert .freetext input {
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: 20px;
+    line-height: 80px;
+    height: 80px;
+    vertical-align: top;
+    color: #000000;
+    font-style: italic;
+    width: 900px;
+}
+
+::-webkit-input-placeholder {
+   color: #000000;
+   font-style: italic;
+}
+:-moz-placeholder {
+   color: #000000;
+   font-style: italic;
+}
+::-moz-placeholder {
+   color: #000000;
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   color: #000000;
+   font-style: italic;
+}
