@@ -1,8 +1,21 @@
 <ng-include src="'app/templates/nav.html'"></ng-include>
 <div class="container">
-	<h1>Home</h1>
+	<div class="row" ng-repeat="concert in concerts">
+		<div class="col-sm-4">
+			<img class="img-responsive" ng-src="{{concert.image_url}}">
+		</div>
+		<div class="col-sm-8">
+			<h1>{{ concert.artist.name }}</h1>
+			<h1>{{ concert.venue.name }}</h1>
+			<h1>by {{ concert.user.first_name }}</h1>
+			<h2>{{ concert.date }}</h2>
+			<div class="rating">
+	    		<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/>
+				<span class="glyphicon glyphicon-star-empty" ng-repeat="n in [] | range:(5-concert.rating)"/>
+	    	</div>
+		</div>
+	</div>
 </div>
-<div class=></div>
 <footer class="footer">
 	<div class="container">
 		<a href="home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
