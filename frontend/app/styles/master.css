@@ -279,12 +279,12 @@ a[href="concert"] {
     margin-left: 10px;
 }
 
-.addconcert .freetext input {
+.addconcert .freetext textarea {
     font-size: 60px;
     font-weight: 300;
     margin-left: 20px;
     line-height: 80px;
-    height: 80px;
+    height: 240px;
     vertical-align: top;
     color: #000000;
     font-style: italic;
