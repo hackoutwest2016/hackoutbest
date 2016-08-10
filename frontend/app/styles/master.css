@@ -128,7 +128,7 @@ div.center {
 }
 
 /* PROFILE */
-.profile {
+.profile, .home {
     margin-top: 210px;
     width: 100%;
     padding: 0 35px;
@@ -171,22 +171,39 @@ div.center {
 .profile .container.concerts {
     width: 800px;
 }
-.profile .concert {
+.profile .concert, .home .concert {
     margin-top: 40px;
 }
-.profile .concert:first-of-type {
+.profile .concert:first-of-type, .home .concert:first-of-type {
     margin-top: 0;
 }
-.profile .concert img {
+.profile .concert img, .home .concert img {
     width: 100%;
     padding: 0;
     margin: 0;
 }
-.profile .concert h1:first-child {
-    margin-top: 10px;
+.profile .concert h1:first-child, .home .concert h1:first-child {
+    margin-top: 5px;
+}
+.home .concert h1 {
+    margin-top: 15px;
+}
+.home .concert h2 {
+    margin: 25px 0 5px;
+    font-size: 30px;
 }
 .profile .concert .rating {
     margin-top: 30px;
     text-align: left;
     margin-right: 0;
+}
+.home .concert .rating {
+    margin-top: 0px;
+    text-align: left;
+    margin-right: 0;
+}
+
+/**/
+a[href="/concert"] {
+    color: #000000;
 }
