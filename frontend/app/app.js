@@ -12,6 +12,10 @@ app.config(function($routeProvider, $locationProvider) {
 			templateUrl: templatesPath + 'home.html',
 			controller: 'HomeController'
 		}).
+		when('/addconcert',{
+			templateUrl: templatesPath + 'addconcert.html',
+			controller: 'AddConcertController'
+		}).
 		when('/concert',{
 			templateUrl: templatesPath + 'concert.html',
 			controller: 'ConcertController'

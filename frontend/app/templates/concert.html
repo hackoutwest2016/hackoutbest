@@ -5,14 +5,21 @@
     	<div class="col-sm-6">
     		<h1>{{concert.artist.name}}</h1>
     		<h1>{{concert.venue.name}}</h1>
-    		<h1>by {{concert.user.name}}</h1>	
+    		<h1>by {{concert.user.name}}</h1>
     		<h1>{{concert.date}}</h1>
 	    </div>
 	    <div class="col-sm-6">
 	    	<div class="rating">
 	    		<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/>
 	    	</div>
-	    </div>	
+	    </div>
     </div>
     <div>{{concert.description}}</div>
 </div>
+<footer class="footer">
+    <div class="container">
+        <a href="concert"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        <a class="divider">&nbsp;|&nbsp;</a>
+        <a href="concert"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </div>
+</footer>
