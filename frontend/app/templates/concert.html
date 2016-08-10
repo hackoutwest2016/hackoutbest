@@ -5,7 +5,7 @@
     	<div class="col-sm-6">
     		<h1>{{concert.artist.name}}</h1>
     		<h1>{{concert.venue.name}}</h1>
-    		<h1>by {{concert.user.name}} <small>{{concert.date}}</small></h1>
+    		<h1>by {{concert.user.first_name}} <small>{{concert.date}}</small></h1>
 	    </div>
 	    <div class="col-sm-6">
 	    	<div class="rating">
@@ -17,8 +17,8 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <a href="concert"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        <a href="concert/{{user}}/{{id-1}}"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
         <a class="divider">&nbsp;|&nbsp;</a>
-        <a href="concert"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        <a href="concert/{{user}}/{{parseInt(id)+1}}"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
     </div>
 </footer>

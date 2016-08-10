@@ -1,19 +1,21 @@
-app.controller('ConcertController', function($scope) {
+app.controller('ConcertController', function($scope, $rootScope, $routeParams) {
   console.log('ConcertController');
 
-  $scope.concert = {
-  	user: {
-  		name: "Axel"
-  	},
-  	artist: {
-  		name: "M83"
-  	},
-  	venue: {
-  		name: "Way out west"
-  	},
-  	description: "When ever I get sad I will think about when they played 'Midnight City' and be happy again. Magic!",
-  	date: "2016.08.11",
-  	image_url: "app/assets/M83.jpg",
-  	rating: 5
+  $scope.id = $routeParams.id;
+  $scope.user = $routeParams.user;
+  if ($routeParams.user === 'me') {
+    if ($scope.id < 0) {
+      $scope.id = $rootScope.myConcerts.length-1;
+    } else if ($scope.id >= $rootScope.myConcerts.length) {
+      $scope.id = 0;
+    }
+    $scope.concert = $rootScope.myConcerts[$scope.id];
+  } else {
+    if ($scope.id < 0) {
+      $scope.id = $rootScope.concerts.length-1;
+    } else if ($scope.id >= $rootScope.concerts.length) {
+      $scope.id = 0;
+    }
+    $scope.concert = $rootScope.concerts[$scope.id];
   }
 });

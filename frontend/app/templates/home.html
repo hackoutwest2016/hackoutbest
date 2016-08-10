@@ -1,7 +1,7 @@
 <ng-include src="'app/templates/nav.html'"></ng-include>
 <div class="container home">
 	<div class="row concert" ng-repeat="concert in concerts">
-		<a href="concert">
+		<a href="concert/{{concert.user.first_name}}/{{$index}}">
 			<div class="col-sm-4">
 				<img class="img-responsive" ng-src="{{concert.image_url}}">
 			</div>
