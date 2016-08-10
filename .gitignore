@@ -2,7 +2,8 @@
 .AppleDouble
 .LSOverride
 
-# Icon must ends with two.
+# Icon must ends with two
+.
 Icon
 
 
@@ -47,3 +48,4 @@ node_modules
 
 # Inte till för alla
 save-commands.json
+backend/dependencies.json
