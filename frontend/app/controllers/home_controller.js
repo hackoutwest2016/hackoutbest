@@ -73,8 +73,8 @@ app.controller('HomeController', function($scope) {
   			name: "M83"
   		},
   		user: {
-  			first_name: "Axel",
-  			surname: "Samuelsson" 
+  			first_name: "Robin",
+  			surname: "Hellgren" 
   		}
   	},
   	{
