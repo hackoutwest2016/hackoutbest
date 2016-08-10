@@ -1,6 +1,7 @@
 <ng-include src="'app/templates/nav.html'"></ng-include>
 <div class="container">
 	<div class="row" ng-repeat="concert in concerts">
+		<a href="/concert">
 		<div class="col-sm-4">
 			<img class="img-responsive" ng-src="{{concert.image_url}}">
 		</div>
@@ -14,6 +15,7 @@
 				<span class="glyphicon glyphicon-star-empty" ng-repeat="n in [] | range:(5-concert.rating)"/>
 	    	</div>
 		</div>
+		</a>
 	</div>
 </div>
 <footer class="footer">

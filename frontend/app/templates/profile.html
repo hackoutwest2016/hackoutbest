@@ -20,6 +20,7 @@
 	</div>
 	<div class="container">
 		<div class="row" ng-repeat="concert in user.concerts">
+			<a href="concert">
 			<div class="col-sm-4">
 				<img class="img-responsive" ng-src="{{concert.image_url}}">
 			</div>
@@ -32,6 +33,7 @@
 					<span class="glyphicon glyphicon-star-empty" ng-repeat="n in [] | range:(concert.rating-5)"/>
 		    	</div>
 			</div>
+			</a>
 		</div>
 	</div>
 </div>
