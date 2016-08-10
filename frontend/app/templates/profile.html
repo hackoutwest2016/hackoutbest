@@ -1,6 +1,6 @@
 <ng-include src="'app/templates/nav.html'"></ng-include>
-<div class="container">
-	<div class="row">
+<div class="container profile">
+	<div class="row info">
 		<div class="col-sm-4">
 			<img ng-src="{{user.image_url}}">
 		</div>
@@ -10,7 +10,7 @@
 			<h2>{{user.friend_count}} friends</h2>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row friends">
 		<div class="col-sm-6">
 			<h2>my friends</h2>
 		</div>
@@ -18,27 +18,26 @@
 			<h2>find friends</h2>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row" ng-repeat="concert in user.concerts">
-			<div class="col-sm-4">
+	<div class="container concerts">
+		<div class="row concert" ng-repeat="concert in user.concerts">
+			<div class="col-sm-5">
 				<img class="img-responsive" ng-src="{{concert.image_url}}">
 			</div>
-			<div class="col-sm-8">
+			<div class="col-sm-7">
 				<h1>{{concert.name}}</h1>
 				<h1>{{concert.venue.name}}</h1>
 				<h1>{{concert.date}}</h1>
 				<div class="rating">
-		    		<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/>
-					<span class="glyphicon glyphicon-star-empty" ng-repeat="n in [] | range:(concert.rating-5)"/>
-		    	</div>
+					<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/><span class="glyphicon glyphicon-star-empty" ng-repeat="n in [] | range:(5-concert.rating)"/>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <footer class="footer">
-    <div class="container">
-        <a href="home"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-        <a class="divider">&nbsp;|&nbsp;</a>
-        <a href="settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
-    </div>
+	<div class="container">
+		<a href="home"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+		<a class="divider">&nbsp;|&nbsp;</a>
+		<a href="settings"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+	</div>
 </footer>
