@@ -1,0 +1,20 @@
+<ng-include src="'app/templates/nav.html'"></ng-include>
+<div class="container-fluid">
+    <img ng-src="{{concert.image_url}}" class="img-responsive img-consert">
+    <div class="row">
+    	<div class="col-sm-6">
+    		<h1>{{concert.artist.name}}</h1>
+    		<h1>{{concert.venue.name}}</h1>
+    		<h1>by {{concert.user.name}}</h1>	
+    		<h1>{{concert.date}}</h1>
+	    </div>
+	    <div class="col-sm-6">
+	    	<div class="rating">
+	    		<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/>
+	    	</div>
+	    </div>	
+    </div>
+    
+    
+    <div>{{concert.description}}</div>
+</div>

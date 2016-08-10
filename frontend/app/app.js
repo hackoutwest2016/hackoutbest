@@ -12,9 +12,9 @@ app.config(function($routeProvider, $locationProvider) {
 			templateUrl: templatesPath + 'home.html',
 			controller: 'HomeController'
 		}).
-		when('/concerts',{
-			templateUrl: templatesPath + 'concerts.html',
-			controller: 'ConcertsController'
+		when('/concert',{
+			templateUrl: templatesPath + 'concert.html',
+			controller: 'ConcertController'
 		}).
 		otherwise({
 			redirectTo: '/'
@@ -22,39 +22,14 @@ app.config(function($routeProvider, $locationProvider) {
 	}
 );
 
-// app.run(['$rootScope', '$window', 'srvAuth',
-//   function($rootScope, $window, sAuth) {
+app.filter('range', function() {
+  return function(input, total) {
+    total = parseInt(total);
 
-//   $rootScope.user = {};
+    for (var i=0; i<total; i++) {
+      input.push(i);
+    }
 
-//   $window.fbAsyncInit = function() {
-//     FB.init({
-//       appId: '***************',
-//       channelUrl: 'app/channel.html',
-//       status: true,
-//       cookie: true,
-//       xfbml: true
-//     });
-
-//     sAuth.watchAuthenticationStatusChange();
-//   };
-
-//   (function(d){
-//     var js,
-//     id = 'facebook-jssdk',
-//     ref = d.getElementsByTagName('script')[0];
-
-//     if (d.getElementById(id)) {
-//       return;
-//     }
-
-//     js = d.createElement('script');
-//     js.id = id;
-//     js.async = true;
-//     js.src = "//connect.facebook.net/en_US/all.js";
-
-//     ref.parentNode.insertBefore(js, ref);
-
-//   }(document));
-
-// }]);
+    return input;
+  };
+});

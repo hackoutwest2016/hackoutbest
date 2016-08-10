@@ -51,3 +51,7 @@ div.center {
     text-align: center;
     min-width: 500px;
 }
+
+img.img-consert {
+    padding: 0px 20px;
+}
