@@ -96,6 +96,9 @@ div.center {
 .footer a:last-child {
     margin-right: 0;
 }
+.footer a:hover {
+    color: #ffffff;
+}
 
 /* CONCERT */
 
@@ -204,6 +207,6 @@ div.center {
 }
 
 /**/
-a[href="/concert"] {
+a[href="concert"] {
     color: #000000;
 }
