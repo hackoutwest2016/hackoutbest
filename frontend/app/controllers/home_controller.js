@@ -16,6 +16,96 @@ app.controller('HomeController', function($scope) {
   			first_name: "Axel",
   			surname: "Samuelsson" 
   		}
+  	},
+  	{
+  		date: "2016.08.11",
+  		image_url: "app/assets/M83.jpg",
+  		rating: 3,
+  		venue: {
+  			name: "Way out west"
+  		},
+  		artist: {
+  			name: "M83"
+  		},
+  		user: {
+  			first_name: "Axel",
+  			surname: "Samuelsson" 
+  		}
+  	},
+  	{
+  		date: "2016.08.11",
+  		image_url: "app/assets/M83.jpg",
+  		rating: 3,
+  		venue: {
+  			name: "Way out west"
+  		},
+  		artist: {
+  			name: "M83"
+  		},
+  		user: {
+  			first_name: "Axel",
+  			surname: "Samuelsson" 
+  		}
+  	},
+  	{
+  		date: "2016.08.11",
+  		image_url: "app/assets/M83.jpg",
+  		rating: 3,
+  		venue: {
+  			name: "Way out west"
+  		},
+  		artist: {
+  			name: "M83"
+  		},
+  		user: {
+  			first_name: "Axel",
+  			surname: "Samuelsson" 
+  		}
+  	},
+  	{
+  		date: "2016.08.11",
+  		image_url: "app/assets/M83.jpg",
+  		rating: 3,
+  		venue: {
+  			name: "Way out west"
+  		},
+  		artist: {
+  			name: "M83"
+  		},
+  		user: {
+  			first_name: "Axel",
+  			surname: "Samuelsson" 
+  		}
+  	},
+  	{
+  		date: "2016.08.11",
+  		image_url: "app/assets/M83.jpg",
+  		rating: 3,
+  		venue: {
+  			name: "Way out west"
+  		},
+  		artist: {
+  			name: "M83"
+  		},
+  		user: {
+  			first_name: "Axel",
+  			surname: "Samuelsson" 
+  		}
+  	},
+  	{
+  		date: "2016.08.11",
+  		image_url: "app/assets/M83.jpg",
+  		rating: 3,
+  		venue: {
+  			name: "Way out west"
+  		},
+  		artist: {
+  			name: "M83"
+  		},
+  		user: {
+  			first_name: "Axel",
+  			surname: "Samuelsson" 
+  		}
   	}
   ]
 
