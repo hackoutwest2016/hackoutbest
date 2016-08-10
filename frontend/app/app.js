@@ -16,6 +16,10 @@ app.config(function($routeProvider, $locationProvider) {
 			templateUrl: templatesPath + 'concert.html',
 			controller: 'ConcertController'
 		}).
+		when('/profile',{
+			templateUrl: templatesPath + 'profile.html',
+			controller: 'ProfileController'
+		}).
 		otherwise({
 			redirectTo: '/'
 		});
