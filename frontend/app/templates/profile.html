@@ -1,0 +1,36 @@
+<ng-include src="'app/templates/nav.html'"></ng-include>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<img ng-src="{{user.image_url}}">
+		</div>
+		<div class="col-sm-8">
+			<h1>{{user.first_name}} {{user.surname}}</h1>
+			<h2>{{user.concert_count}} concerts</h2>
+			<h2>{{user.friend_count}} friends</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>my friends</h2>
+		</div>
+		<div class="col-sm-6">
+			<h2>find friends</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" ng-repeat="concert in user.concerts">
+			<div class="col-sm-4">
+				<img class="img-responsive" ng-src="{{concert.image_url}}">
+			</div>
+			<div class="col-sm-8">
+				<h1>{{concert.name}}</h1>
+				<h1>{{concert.venue.name}}</h1>
+				<h1>{{concert.date}}</h1>
+				<div class="rating">
+		    		<span class="glyphicon glyphicon-star" ng-repeat="n in [] | range:concert.rating"/>
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
