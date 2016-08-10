@@ -3,7 +3,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin-bottom: 150px;
+    margin: 180px 0;
 }
 
 /* NAVBAR */
@@ -37,7 +37,7 @@ div[ng-view] {
     color: #f573a0;
 }
 .navbar .navbar-brand:hover {
-    color: #fae62d;
+    color: #000000;
 }
 .navbar-brand,
 .navbar-nav li a {
@@ -109,7 +109,8 @@ div.center {
 }
 .concert p {
     margin-top: 40px;
-    font-size: 35px;
+    font-size: 38px;
+    font-style: italic;
     padding: 0 35px;
 }
 .concert img {
@@ -124,4 +125,68 @@ div.center {
 }
 .concert .rating span {
     margin-left: 10px;
+}
+
+/* PROFILE */
+.profile {
+    margin-top: 210px;
+    width: 100%;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+.profile .info h1 {
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+.profile .info h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+.profile .info h2:last-child {
+    margin-bottom: 0px;
+}
+.profile .info img {
+    width: 100%;
+}
+
+.profile .friends {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 35px 0;
+    margin: 35px 0;
+}
+.profile .friends h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.profile .friends div:first-child {
+    border-right: 2px solid #000000;
+}
+
+.profile .container.concerts {
+    width: 800px;
+}
+.profile .concert {
+    margin-top: 40px;
+}
+.profile .concert:first-of-type {
+    margin-top: 0;
+}
+.profile .concert img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.profile .concert h1:first-child {
+    margin-top: 10px;
+}
+.profile .concert .rating {
+    margin-top: 30px;
+    text-align: left;
+    margin-right: 0;
 }
