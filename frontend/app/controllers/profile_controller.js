@@ -17,9 +17,9 @@ app.controller('ProfileController', function($scope) {
 				}
 			},
 			{
-				name: "Chvrches",
+				name: "Jamie XX",
 				date: "2016.08.11",
-				image_url: "/app/assets/Chevres.jpg",
+				image_url: "/app/assets/Jamie XX.jpg",
 				rating: 5,
 				venue: {
 					name: "Way out west"
