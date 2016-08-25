@@ -98,7 +98,7 @@ app.run(function($rootScope) {
    {
      name: "Chvrches",
      date: "2016.08.11",
-     image_url: "/app/assets/Chevres.jpg",
+     image_url: "app/assets/Chevres.jpg",
      rating: 3,
      venue: {
        name: "Way out west"
@@ -111,7 +111,7 @@ app.run(function($rootScope) {
    {
      name: "Jamie XX",
      date: "2016.08.11",
-     image_url: "/app/assets/Jamie XX.jpg",
+     image_url: "app/assets/Jamie XX.jpg",
      rating: 5,
      venue: {
        name: "Way out west"
