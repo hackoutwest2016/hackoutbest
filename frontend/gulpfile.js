@@ -11,12 +11,12 @@ gulp.task('concat-css', function() {
 		// "node_modules/bootstrap/dist/css/bootstrap.min.css", 
 		"app/styles/*.css"])
 		.pipe(concat('bundle.css'))
-		.pipe(gulp.dest('dist/'));
+		.pipe(gulp.dest('dist/css/'));
 })
 gulp.task('concat-js', function() {
 	return [gulp.src(["app/app.js", "app/controllers/*.js", "app/services/*.js"])
 		.pipe(concat('app.js'))
-		.pipe(gulp.dest('dist/')),
+		.pipe(gulp.dest('dist/js/')),
 		gulp.src([
 			"node_modules/angular/angular.min.js", 
 			"node_modules/angular-route/angular-route.min.js"])
